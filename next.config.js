@@ -5,8 +5,12 @@ const nextConfig = {
         serverComponentsExternalPackages: ["mongoose"],
     },
     images: {
+        loader: 'akamai',
         domains: ['lh3.googleusercontent.com'],
+        path:''
     },
+    assetPrefix: './',
+
     webpack(config) {
         config.experiments = {
             ...config.experiments,
@@ -16,4 +20,4 @@ const nextConfig = {
     }
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
